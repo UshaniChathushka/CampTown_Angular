@@ -1,0 +1,8 @@
+<div>
+  <h2>Select a District</h2>
+  <ul>
+    <li *ngFor="let district of districts">
+      <button (click)="selectDistrict(district)">{{ district }}</button>
+    </li>
+  </ul>
+</div>

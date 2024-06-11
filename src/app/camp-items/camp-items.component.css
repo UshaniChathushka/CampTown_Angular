@@ -1,0 +1,90 @@
+.page-container {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 70px;
+  padding-left: 18px;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  text-align: left; /* Add this line */
+}
+
+
+.card-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 22%;
+  margin: 15px;
+  background-color: black;
+  border: 1px solid rgb(91, 91, 91);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid white;
+}
+
+.container {
+  padding: 16px;
+  border-top: 1px solid white;
+}
+
+.item-title, .item-price {
+  border-top: 1px solid white;
+  padding-top: 10px;
+}
+
+.item-description {
+  margin: 10px 0;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy-button {
+  background-color: rgb(224, 110, 9);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.buy-button:hover {
+  background-color: rgb(196, 167, 5);
+}
+
+/* Ensure six images per row */
+@media (min-width: 1200px) {
+  .card {
+    width: 16%;
+  }
+}
+.logo-container {
+  position: absolute;
+  top: 0px; /* Adjust this value to control the distance from the top */
+  left: 10px; /* Adjust this value to control the distance from the left */
+  z-index: 1; /* Ensure it's above other overlay content */
+}
+
+.camplogo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}

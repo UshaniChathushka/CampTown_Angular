@@ -1,0 +1,17 @@
+<div class="page-container">
+  <div class="logo-container">
+    <img src="assets/camplogo2.png" alt="Camp Logo" class="camplogo">
+  </div>
+  <h2 style="margin-top: 50px;">Travel Guide</h2>
+  <p style="text-align: justify;">Welcome to CampTown's comprehensive Travel Guide, your ultimate companion for exploring the breathtaking wonders of Sri Lanka. Dive into a treasure trove of invaluable tips, insider insights, and expert recommendations tailored to elevate your journey. Discover the island's hidden gems, from serene beaches to lush jungles, ancient temples to vibrant cities. Navigate with confidence through our curated itineraries, uncovering the best routes, accommodations, and dining options along the way. Whether you're a seasoned adventurer or a first-time traveler, let CampTown be your trusted guide to unlocking the unparalleled beauty and rich culture of Sri Lanka. Your adventure begins here.</p>
+  <div class="card-container">
+    <div *ngFor="let guider of guiders" class="card">
+      <img [src]="'assets/guiders/' + guider.image" alt="{{ guider.name }}">
+      <div class="container">
+        <h4><b>{{ guider.name }}</b></h4>
+        <p>{{ guider.description }}</p>
+        <button class="contact-button">Contact</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #f39c12;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e67e22;
+  }
+  

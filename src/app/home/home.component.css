@@ -1,0 +1,117 @@
+/* Styles for the home container */
+.home-container {
+  position: relative;
+}
+
+/* Styles for the image */
+img {
+  width: 100%;
+  height: auto;
+  display: block; /* This ensures that the image doesn't have any space reserved for descenders */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Styles for the overlay content */
+.overlay {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.overlay h1 {
+  font-size: 7rem;
+  font-family: Raleway;
+  position: fixed;
+  top: 240px; /* Adjust this value to control the distance from the top of the viewport */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* Ensure it's above other overlay content */
+}
+
+.overlay .outline {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.overlay .overlay-text {
+  font-size: 1.2rem;
+}
+
+.overlay button {
+  background-color: rgba(0, 0, 0, 0.767);
+  border: none;
+  padding: 10px 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.856); /* Set button text color to white */
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3rem; /* Set font size */
+  position: fixed;
+  top: 530px; /* Adjust this value to control the distance from the top of the viewport */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* Ensure it's above other overlay content */
+}
+
+.overlay button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.round-button {
+  border-radius: 20px;
+}
+
+.overlay h3 {
+  position: fixed;
+  font-family: cursive;/* Change font family */
+  font-size: 1.6rem; /* Set font size */
+  top: 350px; /* Add margin to the top */
+  left: 70%;
+}
+
+.overlay p {
+  position: relative;
+  font-family: Arial, sans-serif; /* Change font family */
+  font-size: 1.1rem; /* Set font size */
+  top: 410px; /* Add margin to the top */
+  left: 0%;
+  color: rgb(201, 201, 201);
+}
+.follow-us {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  font-size: 1.1rem;
+  top: 190px;
+  color: rgb(255, 255, 255);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social-icon {
+  position: relative;
+  top: 400px;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px; /* Add some spacing between the icons */
+}
+/* Styles for the logo */
+.logo-container {
+  position: absolute;
+  top: 0px; /* Adjust this value to control the distance from the top */
+  left: 10px; /* Adjust this value to control the distance from the left */
+  z-index: 1; /* Ensure it's above other overlay content */
+}
+
+.camplogo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}

@@ -1,0 +1,80 @@
+.about-container {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+  margin-top: 60px; /* Set margin-top to 20px */
+}
+
+.about-text h2 {
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+  text-align: justify; /* Justify the paragraphs */
+}
+
+.follow-us-text {
+  margin-top: 20px;
+  font-weight: bold;
+  color: rgb(184, 182, 179);
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.about-images {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 25px;
+  margin-top: 50px; /* Set margin-top to 50px */
+}
+
+.about-image {
+  width: calc(45% - 5px); /* Adjust width to make images smaller */
+  max-width: 100%;
+  height: auto;
+  border: none; /* Remove the orange border */
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.5s ease; /* Add transition for smooth animation */
+}
+
+/* Apply 3D animation effect to images */
+.about-image:hover {
+  transform: scale(1.1) rotateY(10deg);
+}
+
+
+.logo-container {
+  position: absolute;
+  top: 0px; /* Adjust this value to control the distance from the top */
+  left: 10px; /* Adjust this value to control the distance from the left */
+  z-index: 1; /* Ensure it's above other overlay content */
+}
+
+.camplogo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}

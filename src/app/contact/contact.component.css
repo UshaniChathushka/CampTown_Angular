@@ -1,0 +1,77 @@
+.contact-container {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  min-height: 100vh;
+  font-family: 'Boat', sans-serif; /* Apply custom font */
+}
+
+.contact-details {
+  flex: 1;
+  text-align: left;
+}
+
+.contact-form {
+  flex: 1;
+  margin-top: 70px;
+}
+
+h2 {
+  font-size: 4.2rem; /* Adjust font size as needed */
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+ 
+}
+
+p{
+  color: rgba(204, 204, 204, 0.59);
+}
+
+form {
+  background: transparent;
+  border: 2px solid rgba(190, 92, 7, 0.678);
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgba(224, 110, 9);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkorange;
+}
+
+.logo-container {
+  position: absolute;
+  top: 0px; /* Adjust this value to control the distance from the top */
+  left: 10px; /* Adjust this value to control the distance from the left */
+  z-index: 1; /* Ensure it's above other overlay content */
+}
+
+.camplogo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}

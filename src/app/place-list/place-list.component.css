@@ -1,0 +1,103 @@
+:host {
+  display: block;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px; /* Add padding to ensure content is not too close to the edges */
+}
+
+h2 {
+  margin-top: 70px;
+  text-align: center;
+  color: white;
+}
+
+label {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+select {
+  display: block;
+  margin: 10px auto 30px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Set min and max width for cards */
+  gap: 20px;
+  justify-items: center; /* Center cards horizontally */
+}
+
+.card {
+  width: 200px; /* Set fixed width for all cards */
+  height: 300px; /* Set fixed height for all cards */
+  background-color: transparent; /* Set background to transparent */
+  border: 1px solid rgba(131, 130, 130, 0.447); /* Set border color to white */
+  border-radius: 8px;
+  overflow: hidden;
+  color: white;
+  text-align: center; /* Center text horizontally */
+  padding: 10px; /* Add padding around the content */
+}
+
+.card img {
+  width: 100%; /* Ensure images fill the container */
+  height: 150px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensure images maintain aspect ratio and cover the entire container */
+  border-bottom: 1px solid white; /* Add border to bottom of image */
+  margin-bottom: 10px; /* Add space below the image */
+}
+
+.card h3 {
+  margin: 0; /* Remove default margin */
+  padding-bottom: 5px; /* Add space below the title */
+  font-size: 1.0em;
+}
+
+.card p {
+  margin: 0; /* Remove default margin */
+  font-size: 0.6em;
+  text-align: justify; /* Justify the text */
+  color: rgb(162, 162, 162);
+}
+
+
+.card a {
+  display: inline-block;
+  margin: 10px;
+  font-weight: bold;
+  color: rgb(134, 14, 14);
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+.card p.sinhala-name {
+  color: white; /* Set font color to white */
+  font-size: 0.8em; /* Adjust font size */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Ensure the container takes full height */
+}
+/* Styles for the logo */
+.logo-container {
+  position: absolute;
+  top: 0px; /* Adjust this value to control the distance from the top */
+  left: 10px; /* Adjust this value to control the distance from the left */
+  z-index: 1; /* Ensure it's above other overlay content */
+}
+
+.camplogo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}

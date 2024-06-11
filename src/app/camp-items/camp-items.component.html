@@ -1,0 +1,19 @@
+<div class="page-container">
+  <div class="logo-container">
+    <img src="assets/camplogo2.png" alt="Camp Logo" class="camplogo">
+  </div>
+  <h2>Camping Accessories And Gadgets</h2>
+  <div class="card-container">
+    <div *ngFor="let item of campItems" class="card">
+      <img [src]="'assets/camp-items/' + item.image" alt="{{ item.name }}" class="card-image">
+      <div class="container">
+        <h4 class="item-title"><b>{{ item.name }}</b></h4>
+        <p class="item-description">{{ item.description }}</p>
+        <div class="price-container">
+          <p class="item-price"><b>Price: {{ item.price | currency }}</b></p>
+          <button class="buy-button">Buy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="logo-container">
+  <img src="assets/camplogo2.png" alt="Camp Logo" class="camplogo">
+</div>
+<div>
+  <h2>Camping Places</h2>
+  <label for="district">Filter by district:</label>
+  <select id="district" (change)="onDistrictChange($event)">
+    <option value="">All</option>
+    <option *ngFor="let district of districts" [value]="district">{{ district }}</option>
+  </select>
+
+  <div class="card-container">
+    <div *ngFor="let place of filteredPlaces" class="card">
+      <img [src]="place.image" [alt]="place.name" />
+      <h3>{{ place.name }}</h3>
+      <p class="sinhala-name">{{ place.sinhalaName }}</p> <!-- Add class for Sinhala name -->
+      <p>{{ place.description }}</p>
+      <a [routerLink]="['/place', place.id]" style="color:rgb(187, 81, 5)">See more</a>
+    </div>
+    
+  </div>
+</div>
